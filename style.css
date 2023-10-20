@@ -1,0 +1,513 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden !important;
+}
+.navbar , header , .sec2 , .sec3 , .sec4 , .sec5 , .sec6 , footer{
+    max-width: 97% !important;
+    overflow-x: hidden !important;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    width: 100%;
+    padding: 15px 30px;
+    box-shadow: 0 10px 15px rgba(25,25,25,0.1);
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: rgb(5,5,5);
+    transition: all 0.6s ease;
+
+}
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: rgba(255,0,0,0.507);
+    font-size: 18px;
+}
+
+/* end navbar */
+/*START SEC1 */
+
+header {
+    background-color: rgb(240,240,242);
+    margin-top: 50px;
+}
+
+header .container .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+header .container .row h1 {
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: rgb(11, 28, 57);
+}
+
+header .container .row p {
+    font-size: 17px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: rgb(33, 32, 37);
+    padding: 30px 0;
+}
+
+header .container .row a {
+    padding: 15px 29px;
+    background: rgb(74,74,75);
+    color: rgb(255,255,255);
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+header .container .row a {
+    background: linear-gradient(to left , #4a4a4b , #4a4a4b) no-repeat;
+    background-size: 0%;
+    background-color: #ff2020;
+    border: none;
+    transition: all 0.5s ease;
+}
+header .container .row a:hover {
+    background-size: 100%;
+}
+/*end section 1*/
+
+/*start section 2*/
+.sec2{
+    padding: 40px 0px;
+}
+.sec2 h1{
+    text-transform: capitalize;
+    color: #000;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 1;
+}
+.sec2{
+    padding: 40px 0;
+}
+.sec2 .image .text{
+    text-align: center;
+    margin-top: -15px;
+}
+.sec2 .image .text a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #444444;
+    font-weight: 700;
+    font-size: 24px;
+}
+.sec2 .image .text p{
+    color: #ff2020;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 0px 20px 0px;
+}
+.sec2 .image figure{
+    overflow: hidden;
+}
+.sec2 .image figure img{
+    transition: transform 0.7s ease;
+}
+.sec2 .image img:hover{
+    transform: scale(1.1);
+}
+/* end section 2 */
+/*start section 3*/
+.sec3 .container-fluid{
+    padding: 0;
+    overflow: hidden;
+}
+.gallery .single-gallery{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.gallery .single-gallery .big-img {
+    height: 690px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery .single-gallery .small-img{
+    height: 330px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery  .row .gallery-img {
+    transform: scale(1.06);
+    transition: all 0.5s ease;
+}
+.gallery .row .gallery-img:hover{
+    filter: brightness(0.6);
+    transform: scale(1);
+}
+/*end section 3*/
+/*start section 4*/
+.sec4{
+    padding: 30px 0;
+}
+.sec4 .boxes .row figure img{
+    width: 100%;
+}
+.sec4 .text1{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.sec4 .row .text1 h1{
+    color: #000;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 17px;
+    padding-top: 30px;
+}
+.sec4 .row .text1 p{
+    color: #777;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+.sec4 .boxes .card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+}
+.sec4 .boxes .row figure{
+    border-bottom: 3px  solid #f81f1f;
+    position: relative;
+    overflow: hidden;
+}
+.sec4 .boxes .row figure a{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff2020;
+    padding: 20px;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.sec4 .boxes .row figure:hover a{
+    opacity: 1;
+    padding-bottom: 20px;
+}
+.sec4 .boxes .row i{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.sec4 .boxes .row .card figure:hover i{
+    opacity: 1;
+}
+.sec4 .boxes .card .text{
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.sec4 .boxes .card .text a{
+    text-decoration: none;
+    color: #444444;
+    font-weight: 700;
+    font-size: 27px;
+}
+.sec4 .boxes .card .text p{
+    color: #444444;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 0 20px 0;
+}
+/*end section 4*/
+/*start section 5*/
+
+.sec5{
+    margin: 30px 0;
+    padding-bottom: 40px;
+}
+.sec5 .container .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec5 .container .row .text h1{
+    color: #000;
+    font-size: 53px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 40px;
+    font-family: "Josefin Sans",sans-serif;
+}
+.sec5 .container .row .text p{
+    color: #777;
+    margin-bottom: 50px;
+    font-size: 17px;
+    font-family: "Roboto",sans-serif;
+    font-weight: normal;
+}
+.sec5 .container .row .text a{
+    padding:18px 24px ;
+    background-color: #ff2020;
+    color: rgb(255,255,255);
+    font-family: "Josefin Sans",sans-serif;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform:uppercase;
+}
+.sec5 .container .row .card{
+    border: none;
+}
+/*end section 5*/
+/*start section 6*/
+
+.sec6{
+    padding: 40px 0;
+}
+.sec6 .container{
+    background-color: #ea0000;
+    padding: 10px 30px 0px 30px;
+}
+.sec6 .container .row .block i{
+    font-size: 40px;
+    color: #ffff;
+    margin: 25px 0px;
+}
+.sec6 .container .row .block h6{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    font-family: "Roboto",sans-serif;
+}
+.sec6 .container .row .block p{
+    font-size: 16px;
+    color: #d3d1d1;
+    font-family: "Roboto",sans-serif;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+/*end section 6*/
+/*start footer*/
+
+footer{
+    padding: 40px 0px;
+}
+footer .top-footer{
+    padding: 40px 0;
+    margin-top: 20px;
+}
+footer .top-footer .logo figure{
+    margin-bottom: 40px;
+}
+footer .top-footer .logo .text p{
+    color: #868c98;
+    font-size: 16px;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+footer .top-footer .lists .header h1{
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: "Roboto",sans-serif;
+}
+footer .top-footer .lists ul{
+    list-style: none;
+}
+footer .top-footer .lists ul li{
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+footer .top-footer .lists ul li a{
+    color: #868c98;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    font-family: "Roboto",sans-serif;
+}
+footer .top-footer .lists ul li:hover{
+    transform:translateX(5px);
+}
+footer .top-footer .lists ul li:hover a{
+    color: #ff2020;
+}
+
+footer .bottom-footer{
+    padding: 20px 0px;
+    margin: 60px 0px;
+}
+footer .bottom-footer .text p{
+    color: #888888;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 2;
+    font-family: "Roboto",sans-serif;
+}
+footer .bottom-footer .text span{
+    color: #ff2020;
+    font-weight: bold;
+}
+footer .bottom-footer .icons i{
+    padding: 0px 10px;
+    transition: transform 0.7s ease-in-out;
+}
+footer .bottom-footer .icons i:hover{
+    color: #ff2020;
+    transform: rotateY(180deg);
+}
+/*end footer*/
+@media only screen and (min-width: 0px) and (max-width: 575px){
+    body{
+        overflow-x: hidden !important;
+    }
+    .navbar , header , .sec2 , .sec3 , .sec4 , .sec5 , .sec6 , footer{
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    header .container .row {
+        padding: 50px 0px;
+    }
+    header .container .row h1 {
+    font-size: 35px;
+    }
+    header .container .row img {
+        display: none;
+    }
+    .sec2 .image{
+        padding: 10px;
+    }
+    .sec2 .image img{
+        width: 100%;
+    }
+    .sec4 .row .text1 h1{
+        font-size: 33px;
+    }
+    .sec4 .boxes .card{
+        padding: 0 30px;
+    }
+    .sec5 .container .row .text a{
+        margin-bottom: 200px;
+    }
+    .sec5 .container .row .text h1{
+        font-size: 30px;
+    }
+    .sec5 .container .row .card figure img{
+        padding: 30px 0;
+    }
+    footer .bottom-footer .icons i{
+        margin-top: 50px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    body{
+        overflow-x: hidden !important;
+    }
+    .navbar , header , .sec2 , .sec3 , .sec4 , .sec5 , .sec6 , footer{
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    header .container .row h1 {
+        font-size: 35px;
+        }
+        header .container .row img {
+            height:400px ;
+        }
+        .sec2 .image .text a{
+            font-size: 17px;
+        }
+        .sec4 .boxes .card .text a{
+            font-size: 30px;
+        }
+        .sec5 .container .row .text h1{
+            font-size: 30px;
+        }
+        .sec5 .container .row .card figure img{
+            padding: 30px 0;
+        }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    body{
+        overflow-x: hidden !important;
+    }
+    .navbar , header , .sec2 , .sec3 , .sec4 , .sec5 , .sec6 , footer{
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    header .container .row h1 {
+        font-size: 50px;
+    }
+    header .container .row img {
+        height:500px ;
+    }
+    .sec2 .image .text a{
+        font-size: 17px;
+    }
+    .sec4 .boxes .card .text a{
+        font-size: 30px;
+    }
+    .sec5 .container .row .text h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .sec5 .container .row .text p{
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    body{
+        overflow-x: hidden !important;
+    }
+    .navbar , header , .sec2 , .sec3 , .sec4 , .sec5 , .sec6 , footer{
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    header .container .row h1 {
+        font-size: 60px;
+    }
+    header .container .row img {
+        height:500px ;
+    }
+    .sec5 .container .row .text h1{
+        font-size: 43px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1550px){
+    body{
+        overflow-x: hidden !important;
+    }
+    .navbar , header , .sec2 , .sec3 , .sec4 , .sec5 , .sec6 , footer{
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    .sec6 .container .row .block p{
+        width: 70%;
+    }
+}
