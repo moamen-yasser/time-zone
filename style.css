@@ -263,7 +263,7 @@ header .container .row a:hover {
     font-family: "Roboto",sans-serif;
     font-weight: normal;
 }
-.sec5 .container .row .text a{
+.sec5 .container .row .text .btn a{
     padding:18px 24px ;
     background-color: #ff2020;
     color: rgb(255,255,255);
@@ -382,6 +382,7 @@ footer .bottom-footer .icons i:hover{
     transform: rotateY(180deg);
 }
 /*end footer*/
+
 @media only screen and (min-width: 0px) and (max-width: 575px){
     body{
         overflow-x: hidden !important;
@@ -417,8 +418,12 @@ footer .bottom-footer .icons i:hover{
     .sec5 .container .row .text h1{
         font-size: 30px;
     }
-    .sec5 .container .row .card figure img{
-        padding: 30px 0;
+    .sec5 .container .row .text .btn{
+        margin-bottom: 50px;
+    }
+    .sec5_2 .container .row{
+        display: flex;
+        flex-direction: column-reverse;
     }
     footer .bottom-footer .icons i{
         margin-top: 50px;
@@ -449,6 +454,10 @@ footer .bottom-footer .icons i:hover{
         }
         .sec5 .container .row .card figure img{
             padding: 30px 0;
+        }
+        .sec5_2 .container .row{
+            display: flex;
+            flex-direction: column-reverse;
         }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px){
